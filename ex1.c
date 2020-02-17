@@ -15,17 +15,15 @@
 // }
 int isTriangular(int numb) { 
     // Base case 
-    if (numb < 0) {
+    if (numb < 0) 
         return 0; 
-    }
     // A Triangular number must be 
     // sum of first n natural numbers 
     int sum = 0; 
     for (int i = 1; sum <= numb; i++) { 
         sum+=i; 
-        if (sum == numb) {
+        if (sum == numb) 
             return 1; 
-        }
     } 
     return 0; 
 } 
