@@ -29,6 +29,7 @@ int main(){
             triangle +=i;
             if (num == triangle){
                 printf("%d is a triangular number \n", num);
+                break;
             }
         }
         if (num != triangle){
