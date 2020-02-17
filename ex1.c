@@ -25,9 +25,9 @@ int main(){
         if (num == 0) {
             printf("Done");
             break;
-        } else if (isTriangular(num)){
+        } else if (isTriangular(num) == 1){
             printf("%d is a triangular number \n", num);
-        } else if (!isTriangular(num)){
+        } else if (!isTriangular(num) == 0){
             printf("%d is not a triangular number \n", num);
         }
         // for (int i = 1; i < num; i++){
@@ -52,17 +52,17 @@ int main(){
         // }
     }
 }
-static bool isTriangular(int num) { 
+int isTriangular(int num) { 
         // Base case 
         if (num < 0) 
-            return false; 
+            return 0; 
         // A Triangular number must be 
         // sum of first n natural numbers 
         int sum = 0; 
         for (int i = 1; sum <= num; i++) { 
             sum+=1; 
             if (sum == num) 
-                return true; 
+                return 1; 
         } 
-        return false; 
+        return 0; 
 } 
