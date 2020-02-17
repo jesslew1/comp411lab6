@@ -4,7 +4,7 @@
 int main(){
     int num;
     float triangular;
-    double floor(double x);
+    // double floor(double x);
     while(1){
         printf("Number ?\n");
         scanf("%d", &num);
