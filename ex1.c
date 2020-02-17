@@ -9,13 +9,14 @@ int main(){
         printf("Number ?\n");
         scanf("%d", &num);
         triangle = (num*(num+1)) / 2;
-        int result = floor(triangle);
+        int resultf = floor(triangle);
+        int resultc = ceil(triangle);
         if (num == 0) {
             printf("done");
             break;
-        } else if (triangle == result){
+        } else if (triangle == resultf || triangle == resultc){
             printf("%d is a triangular number \n", num);
-        } else if (triangle != result){
+        } else if (triangle != resultf || triangle != resultc){
             printf("%d is a not triangular number \n", num);
         }
     }
