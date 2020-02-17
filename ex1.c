@@ -15,7 +15,7 @@
 // }
 int main(){
     int num;
-    double triangle = 0;
+    double triangle;
     // double floor(double number);
     // double ceil(double x);
     while(1){
@@ -33,7 +33,7 @@ int main(){
             }
         }
         if (num != triangle){
-            printf("%d is a not triangular number \n", num);
+            printf("%d is not a triangular number \n", num);
         }
         // double resultf = doubleToInt(triangle);
         // double resultc = ceil(triangle);
