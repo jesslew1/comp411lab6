@@ -10,7 +10,7 @@ int main(){
         printf("Number ?\n");
         scanf("%d", &num);
         triangle = (num*(num+1)) / 2;
-        result = floor(triangle);
+        int result = floor(triangle);
         if (num == 0) {
             printf("done");
             break;
