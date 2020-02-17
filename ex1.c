@@ -15,9 +15,9 @@ int main(){
         if (num == 0) {
             printf("Done");
             break;
-        } else if (triangle == resultf || triangle == resultc){
+        } else if (triangle == resultf ){
             printf("%d is a triangular number \n", num);
-        } else if (triangle != resultf || triangle != resultc){
+        } else if (triangle != resultf ){
             printf("%d is a not triangular number \n", num);
         }
     }
