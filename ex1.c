@@ -2,15 +2,14 @@
 #include <math.h>
 
 int main(){
-    
+    int num;
+    double triangle;
     while(1){
-        int num;
-        double triangle;
         printf("Number ?\n");
         scanf("%d", &num);
         triangle = (num*(num+1)) / 2;
-        int resultf = floor(triangle);
-        int resultc = ceil(triangle);
+        double resultf = floor(triangle);
+        double resultc = ceil(triangle);
         if (num == 0) {
             printf("done");
             break;
@@ -20,7 +19,8 @@ int main(){
             printf("%d is a not triangular number \n", num);
         }
     }
-
+double floor(double number);
+double ceil(double x);
 
 
 }
