@@ -1,6 +1,14 @@
 #include <stdio.h>
 // #include <math.h>
 
+int doubleToInt(double numb){
+    if(numb < 0) {
+        return (int)numb - 1;
+    }
+    else {
+        return (int)numb;
+    }
+}
 int main(){
     int num;
     double triangle;
@@ -21,10 +29,4 @@ int main(){
             printf("%d is a not triangular number \n", num);
         }
     }
-}
-int doubleToInt(double numb){
-    if(numb < 0)
-        return (int)numb - 1;
-    else
-        return (int)numb;
 }
