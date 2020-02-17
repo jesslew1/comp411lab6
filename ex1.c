@@ -40,7 +40,6 @@ int main(){
         if (num != 0) {
             if (!isTriangular(num) == 0){
                 printf("%d is not a triangular number\n", num);
-            }
             } else if (isTriangular(num) == 1){
                 printf("%d is a triangular number\n", num);
             }
