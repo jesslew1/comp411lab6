@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-int num;
-double triangular;
 int main(){
+    int num;
+    float triangular;
     double floor(double x);
     while(1){
         printf("Number ?\n");
