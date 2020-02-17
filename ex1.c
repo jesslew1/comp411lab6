@@ -6,8 +6,8 @@ double triangular;
 int main(){
     while(1){
         printf("Number ?\n");
-        scanf(%d, num);
-        triangular = (num*(num+1)) / 2
+        scanf(%d, &num);
+        triangular = (num*(num+1)) / 2;
         if (num == 0) {
             printf("done");
             break;
