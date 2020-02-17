@@ -21,7 +21,7 @@ int isTriangular(int num) {
     // sum of first n natural numbers 
     int sum = 0; 
     for (int i = 1; sum <= num; i++) { 
-        sum+=1; 
+        sum+=i; 
         if (sum == num) 
             return 1; 
     } 
