@@ -4,6 +4,8 @@
 int main(){
     int num;
     double triangle;
+    double floor(double number);
+    double ceil(double x);
     while(1){
         printf("Number ?\n");
         scanf("%d", &num);
@@ -19,8 +21,6 @@ int main(){
             printf("%d is a not triangular number \n", num);
         }
     }
-double floor(double number);
-double ceil(double x);
 
 
 }
