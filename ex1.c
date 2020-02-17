@@ -22,6 +22,6 @@ int main(){
         }
     }
 }
-double my_floor(double num){
+int my_floor(double numb){
     return (int)num;
 }
