@@ -24,7 +24,7 @@ int isTriangular(int num) {
     for (int i = 1; sum <= num; i++) { 
         sum+=i; 
         if (sum == num) {
-            return 1; 
+            return 2; 
         }
     } 
     return 0; 
@@ -40,7 +40,7 @@ int main(){
         if (num != 0) {
             if (!isTriangular(num) == 0){
                 printf("%d is not a triangular number\n", num);
-            } else if (isTriangular(num) == 1){
+            } else if (isTriangular(num) == 2){
                 printf("%d is a triangular number\n", num);
             }
         } else if (num ==0){
