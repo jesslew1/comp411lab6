@@ -9,7 +9,7 @@ void makepatterns(int currentlevel) {
   else {
     pattern[currentlevel] = '0';       // set one character to something
     makepatterns(currentlevel + 1);      // recursive call
-    if (currentlevel != 0 && pattern[currentlevel-1] != '1'){
+    if (currentlevel == 0 || pattern[currentlevel-1] != '1'){
         pattern[currentlevel] = '1';       // set it to something else
         makepatterns(currentlevel + 1);      // recursive call
     }
