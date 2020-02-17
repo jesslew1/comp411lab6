@@ -23,5 +23,5 @@ int main(){
     }
 }
 int my_floor(double numb){
-    return (int)num;
+    return (int)numb;
 }
