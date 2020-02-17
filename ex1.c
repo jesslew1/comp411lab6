@@ -3,8 +3,8 @@
 
 int num;
 double triangular;
-double floor(double x);
 int main(){
+    double floor(double x);
     while(1){
         printf("Number ?\n");
         scanf("%d", &num);
