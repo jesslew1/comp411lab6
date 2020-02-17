@@ -4,7 +4,6 @@
 int main(){
     int num;
     double triangle;
-    // double floor(double x);
 
     while(1){
         printf("Number ?\n");
