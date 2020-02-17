@@ -10,7 +10,7 @@ int main(){
         printf("Number ?\n");
         scanf("%d", &num);
         triangle = (num*(num+1)) / 2;
-        double resultf = floor(triangle);
+        double resultf = doubleToInt(triangle);
         // double resultc = ceil(triangle);
         if (num == 0) {
             printf("Done");
@@ -22,6 +22,9 @@ int main(){
         }
     }
 }
-int floor(double numb){
-    return (int)numb;
+int doubleToInt(double numb){
+    if(numb < 0)
+        return (int)numb - 1;
+    else
+        return (int)numb;
 }
