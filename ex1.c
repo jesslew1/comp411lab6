@@ -13,18 +13,18 @@
     
 //     return triangle;
 // }
-int isTriangular(int num) { 
+int isTriangular(int numb) { 
     // Base case 
-    if (num < 0) {
+    if (numb < 0) {
         return 0; 
     }
     // A Triangular number must be 
     // sum of first n natural numbers 
     int sum = 0; 
-    for (int i = 1; sum <= num; i++) { 
+    for (int i = 1; sum <= numb; i++) { 
         sum+=i; 
-        if (sum == num) {
-            return 2; 
+        if (sum == numb) {
+            return 1; 
         }
     } 
     return 0; 
@@ -40,7 +40,7 @@ int main(){
         if (num != 0) {
             if (!isTriangular(num) == 0){
                 printf("%d is not a triangular number\n", num);
-            } else if (isTriangular(num) == 2){
+            } else if (isTriangular(num) == 1){
                 printf("%d is a triangular number\n", num);
             }
         } else if (num ==0){
