@@ -5,7 +5,7 @@ char pattern[11];         // at most 20 chars plus NULL
 
 void makepatterns(int currentlevel) {
   if(currentlevel == N)
-    printf("%s", pattern);    // print a pattern
+    printf("%s\n", pattern);    // print a pattern
   else {
     pattern[currentlevel] = '0';       // set one character to something
     makepatterns(currentlevel + 1);      // recursive call
