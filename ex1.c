@@ -11,7 +11,7 @@
 // }
 int main(){
     int num;
-    double triangle;
+    double triangle = 0;
     // double floor(double number);
     // double ceil(double x);
     while(1){
