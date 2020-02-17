@@ -13,7 +13,20 @@
     
 //     return triangle;
 // }
-
+int isTriangular(int num) { 
+    // Base case 
+    if (num < 0) 
+        return 0; 
+    // A Triangular number must be 
+    // sum of first n natural numbers 
+    int sum = 0; 
+    for (int i = 1; sum <= num; i++) { 
+        sum+=1; 
+        if (sum == num) 
+            return 1; 
+    } 
+    return 0; 
+} 
 int main(){
     int num;
     double triangle;
@@ -52,17 +65,4 @@ int main(){
         // }
     }
 }
-int isTriangular(int num) { 
-        // Base case 
-        if (num < 0) 
-            return 0; 
-        // A Triangular number must be 
-        // sum of first n natural numbers 
-        int sum = 0; 
-        for (int i = 1; sum <= num; i++) { 
-            sum+=1; 
-            if (sum == num) 
-                return 1; 
-        } 
-        return 0; 
-} 
+
