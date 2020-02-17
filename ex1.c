@@ -24,8 +24,10 @@ int main(){
                 break;
             } else if (num == triangle){
                 printf("%d is a triangular number \n", num);
+                break;
             } else if (num != triangle){
                 printf("%d is a not triangular number \n", num);
+                break;
             }
         }
         // double resultf = doubleToInt(triangle);
