@@ -1,12 +1,12 @@
 #include <stdio.h>
-
+#include <math.h>
 
 int num;
 double triangular;
 int main(){
     while(1){
         printf("Number ?\n");
-        scanf(%d, &num);
+        scanf("%d", &num);
         triangular = (num*(num+1)) / 2;
         if (num == 0) {
             printf("done");
